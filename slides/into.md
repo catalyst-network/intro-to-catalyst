@@ -2,20 +2,20 @@
 marp: true
 theme: default
 style: |
-  section, code {
-    background-color: #19445b;
-  }
-  p, h1, h2, h3, h4, li, pre, code, code span, code svg, .hljs-string {
-      color: white;
-      border: none;
-  }
-  pre, code {
-      color: white;
-      background: none;
-  }
+  # section, code {
+  #   background-color: #19445b;
+  # }
+  # p, h1, h2, h3, h4, li, pre, code, code span, code svg, header, .hljs-string {
+  #     color: white;
+  #     border: none;
+  # }
+  # pre, code {
+  #     color: white;
+  #     background: none;
+  # }
 
-header: '**_header content_**'
-footer: '![image](https://example.com/image.jpg)'
+header: '**_Virtual Meet-up #1 - Developer introduction_**'
+# footer: '![image](https://example.com/image.jpg)'
 ---
 
 # Catalyst Network
@@ -28,7 +28,8 @@ Developer Introduction
 
 ---
 
-# <!--fit-->What is Catalyst?
+# What is the
+# <!--fit-->Catalyst Network?
 
 ---
 
@@ -38,22 +39,98 @@ Developer Introduction
 
 ---
 
-# Catalyst Core Framework 
+# Catalyst Network 
 
 * Probabalistic BFT Consensus
 * Distributed FileSystem (DFS)
 * Distributed Compute System (DCS)
 * Distributed DNS
 * KVM smart contracts
-* Public and Cconfidential transactions
+* Public and Confidential transactions
 
 ---
 
-# <!---fit--->What is Probablistic BFT
+# What is 
+# <!--fit-->Probablistic BFT Consensus
 
 ---
 
 # <!---fit--->A collabarative process in which nodes collectively vote on global state transitions
+
+---
+# Create Transaction
+```
+                                                                                                                   +--Confidential Entry-------------------+---------------+
++---Protocol Message-------------------------------------+-----------------+                                       |                                       |               |
+|                                                        |                 |                                       |  value_commitment                     | M * 32 bytes  |
+|   PeerID                                               | 60 bytes        |   +--Public Entry----+-----------+    |                                       |               |
+|                                                        |                 |   |                  |           |    +-------------------------------------------------------+
++--------------------------------------------------------------------------+   |  Amount          |  32 bytes |    |                                       |               |
+|                                                        |                 |   |                  |           |    |  bit_commitment                       | 32 bytes      |
+|   CorrelationId                                        | 16 bytes        |   +------------------------------+    |                                       |               |
+|                                                        |                 |   |                  |           |    +-------------------------------------------------------+
++--------------------------------------------------------------------------+   |  To Address      |  20 bytes |    |                                       |               |
+|                                                        |                 |   |                  |           |    |  per_bit_blinding_factor_commitment   | 32 bytes      |
+|   MessageType                                          | 2 bytes         |   +------------------------------+    |                                       |               |
+|                                                        |                 |   |                  |           |    +-------------------------------------------------------+
++--------------------------------------------------------------------------+   |  From Address    |  20 bytes |    |                                       |               |
+|                                                        |                 |   |                  |           |    |  poly_commitment_t1                   | 32 bytes      |
+|   Signature                                            | 64 bytes        |   +------------------------------+    |                                       |               |
+|                                                        |                 |   |                  |           |    +-------------------------------------------------------+
++--------------------------------------------------------------------------+   |  Transaction Fee |  32 bytes |    |                                       |               |
+|--Transaction Message-----------------------------------------------------|   |                  |           |    |  poly_commitment_t2                   | 32 bytes      |
+||                     |                                 |                ||   +------------------+-----------+    |                                       |               |
+||                     |  Public Entries                 | N * 104 bytes  ||                                       +-------------------------------------------------------+
+||                     |                                 |                ||   +--Contract Entry--+-----------+    |                                       |               |
+||                     |                                 |                ||   |                  |           |    |  proof_of_share_tau                   | 32 bytes      |
+||                     +---------------------------------------------------|   |  Amount          |  32 bytes |    |                                       |               |
+||                     |                                 |                ||   |                  |           |    +-------------------------------------------------------+
+||  Entries (N > 1)    |                                 |                ||   +------------------------------+    |                                       |               |
+||                     |  Confidential Entries           | N * (104 bytes ||   |                  |           |    |  proof_of_share_mu                    | 32 bytes      |
+||                     |                                 | + CallData)    ||   |  CallData        | Bytes > 0 |    |                                       |               |
+||                     |                                 |                ||   |                  |           |    +-------------------------------------------------------+
+||                     +---------------------------------------------------|   +------------------------------+    |                                       |               |
+||                     |                                 |                ||   |                  |           |    |  aggregated_vector_polynomial_l       | k * 32 bytes  |
+||                     |                                 |                ||   |  To Address      |  20 bytes |    |                                       |               |
+||                     |  Smart Contract Entries         |  N*736 bytes   ||   |                  |           |    +-------------------------------------------------------+
+||                     |                                 |                ||   +------------------------------+    |                                       |               |
+||                     |                                 |                ||   |                  |           |    |  aggregated_vector_polynomial_r       | k * 32 bytes  |
+|----------------------+---------------------------------------------------|   |  From Address    |  20 bytes |    |                                       |               |
+||                                                       |                ||   |                  |           |    +-------------------------------------------------------+
+||  Signature                                            |  64 bytes      ||   +------------------------------+    |                                       |               |
+||                                                       |                ||   |                  |           |    |  a_prime_0                            | 32 bytes      |
+|--------------------------------------------------------------------------|   |  Transaction Fee |  32 bytes |    |                                       |               |
+||                                                       |                ||   |                  |           |    +-------------------------------------------------------+
+||  Timestamp                                            |  4 bytes       ||   +------------------+-----------+    |                                       |               |
+||                                                       |                ||                                       |  b_prime_0                            | 32 bytes      |
+|--------------------------------------------------------------------------|                                       |                                       |               |
++--------------------------------------------------------------------------+                                       +---------------------------------------+---------------+
+
+```
+
+---
+
+# Broadcast to network
+
+![bg right 90%](./images/gossip.png)
+
+---
+
+# Nothing too strange yet
+
+---
+
+# Deterministic Mempool Ordering
+
+- Highest amount
+- Highest fee
+- Signature in alphabetical order
+
+![bg right 50%](./images/deterministic-mempool.png)
+
+---
+
+![bg 90%](./images/catalyst-network.png)
 
 ---
 
