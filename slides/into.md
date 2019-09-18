@@ -1,7 +1,21 @@
 ---
 marp: true
 theme: default
-class:
+style: |
+  section, code {
+    background-color: #19445b;
+  }
+  p, h1, h2, h3, h4, li, pre, code, code span, code svg, .hljs-string {
+      color: white;
+      border: none;
+  }
+  pre, code {
+      color: white;
+      background: none;
+  }
+
+header: '**_header content_**'
+footer: '![image](https://example.com/image.jpg)'
 ---
 
 # Catalyst Network
@@ -24,11 +38,22 @@ Developer Introduction
 
 ---
 
-# Decentralised framework 
+# Catalyst Core Framework 
 
-* Integrated distributed filesystem
+* Probabalistic BFT Consensus
+* Distributed FileSystem (DFS)
+* Distributed Compute System (DCS)
+* Distributed DNS
+* KVM smart contracts
 * Public and Cconfidential transactions
-* KVM smart contracts, backwards compatiabile with Ethereum EVM plus moarrrr.
+
+---
+
+# <!---fit--->What is Probablistic BFT
+
+---
+
+# <!---fit--->A collabarative process in which nodes collectively vote on global state transitions
 
 ---
 
@@ -136,11 +161,6 @@ Core librarys and helpers for IO, networking and configuration. Low level functi
 Custom modules are a great way of providing additional or domain specific functionality to the ledger.
 
 ---
-
-# <!---fit--->What is Probablistic BFT
-
----
-
 
 # <!--fit--> #NotHotDog
 
