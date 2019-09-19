@@ -120,17 +120,110 @@ Developer Introduction
 
 ---
 
-# Deterministic Mempool Ordering
+# Deterministic Mempool
 
 - Highest amount
 - Highest fee
+- Oldest timestamp
 - Signature in alphabetical order
 
 ![bg right 50%](./images/deterministic-mempool.png)
 
 ---
 
-![bg 90%](./images/catalyst-network.png)
+# Validation
+
+---
+
+# Peers in the validation process have 4 states
+
+1. Passive Node
+    - Connected to peer network
+2. Reservist Node
+    - Awaiting for admission to the validation pool
+3. Worker Node
+    - A node that is admited to the validation pool
+4. Producer Node
+    - A subset of worker nodes who can contirbute to production of ledger state updates
+
+---
+
+# Network Constitution
+![bg right 100%](./images/network-constitution.png)
+
+---
+
+# Validation pool
+
+![bg 40%](./images/t1.png)
+
+---
+
+
+# Validation pool
+
+![bg 40%](./images/t2.png)
+
+---
+
+# Validation pool
+
+![bg 40%](./images/t2a.png)
+
+---
+
+# Validation pool
+
+![bg 40%](./images/t3.png)
+
+---
+
+# Validation pool
+
+![bg 40%](./images/t4.png)
+
+---
+
+# Validation pool
+
+![bg 40%](./images/t5.png)
+
+---
+
+
+![bg 40%](./images/sad-banana.jpg)
+
+---
+
+# 51% Attack Research
+
+![](./images/probability-sum.png)
+
+# <!--fit--> http://github.com/catalyst-network/51-percent-attack-research
+
+![bg right 80%](./images/51-simulation.png)
+
+---
+
+# The Ledger Cycle
+
+- Producers validate common sets of transactions from the mempool
+
+- Each producer compiles a state delta and votes among its peers in the cycle to vote on the most popular delta produced by the set of producers.
+
+---
+
+# The Ledger Cycle
+
+![bg right 100%](./images/ledger-cycle.png)
+
+---
+
+# Consensus Research
+
+# <!--fit--> https://catalystnet.org/consensus-research-paper.pdf
+
+![bg right 100%](./images/1cycle.png)
 
 ---
 
@@ -239,8 +332,18 @@ Custom modules are a great way of providing additional or domain specific functi
 
 ---
 
-# <!--fit--> #NotHotDog
+# Early Access Program
 
-![bg right 75%](./images/its-science.jpg "its science!!!")
+Sign up to the Catalyst Network EAP
 
+https://catalystnet.org/eap
+
+---
+
+# Thanks
+
+[twitter.com/catalystNetOrg](https://twitter.com/catalystNetOrg)
+[github.com/catalyst-network](https://github.com/catalyst-network)
+[twitter.com/@nshcore](https://twitter.com/nshcore)
+[github.com/nshcore](https://github.com/nshcore)
 ---
