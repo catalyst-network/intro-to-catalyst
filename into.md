@@ -518,7 +518,7 @@ KVM will extend EVM allowing Catalyst users to create and verify Catalyst crypto
 
 ---
 
-# KVM will extend EVM allowing Catalyst users to create and verify Catalyst cryptographical artifacts.Catalyst signatures and multihashes will be available for KVM smart contract developers.
+# State rent mechanism
 
 KVM will be from the beginning balancing the cost of local, high availability state and the long term DFS storage.State rent and DFS cache mechanism will allow to correctly attribute storage cost to contract owners and users.
 
