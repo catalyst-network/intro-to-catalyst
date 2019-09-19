@@ -332,8 +332,18 @@ Custom modules are a great way of providing additional or domain specific functi
 
 ---
 
-# <!--fit--> #NotHotDog
+# Early Access Program
 
-![bg right 75%](./images/its-science.jpg "its science!!!")
+Sign up to the Catalyst Network EAP
 
+https://catalystnet.org/eap
+
+---
+
+# Thanks
+
+[twitter.com/catalystNetOrg](https://twitter.com/catalystNetOrg)
+[github.com/catalyst-network](https://github.com/catalyst-network)
+[twitter.com/@nshcore](https://twitter.com/nshcore)
+[github.com/nshcore](https://github.com/nshcore)
 ---
