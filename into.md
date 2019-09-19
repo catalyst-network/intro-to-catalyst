@@ -480,6 +480,46 @@ Custom modules are a great way of providing additional or domain specific functi
 ```
 ---
 
+# KVM
+
+---
+
+# ERC Standards on KVM
+
+KVM is designed to be a host for ERC-20, ERC-223, ERC-721 and other standard Ethereum contracts
+
+---
+
+# Ethereum DeFi on KVM
+
+With EVM compatibility KVM can bring successful Ethereum solutions like UniSwap or MakerDAO into Catalyst and allow users to interact with DeFi tools they feel familiar with
+
+---
+
+# Integration with Ethereum tools
+
+KVM developers will be able to use Solidity, Vyper and Truffle for contract development and deployments.KVM will create a mapping between known Web3 / JSON RPC calls and Catalyst state.
+
+---
+
+# Native DFS access from KVM
+
+Catalyst users will have a unique ability to build KVM contracts that will have read and write access to big data sets stored on DFS.Prefetch mechanisms and local DFS caches deliver a solution to data availability for virtual machines.
+
+---
+
+# KVM with Catalyst cryptography
+
+KVM will extend EVM allowing Catalyst users to create and verify Catalyst cryptographical artifacts.Catalyst signatures and multihashes will be available for KVM smart contract developers.
+
+---
+
+# KVM will extend EVM allowing Catalyst users to create and verify Catalyst cryptographical artifacts.Catalyst signatures and multihashes will be available for KVM smart contract developers.
+
+KVM will be from the beginning balancing the cost of local, high availability state and the long term DFS storage.State rent and DFS cache mechanism will allow to correctly attribute storage cost to contract owners and users.
+
+---
+
 # Early Access Program
 
 Sign up to the Catalyst Network EAP
