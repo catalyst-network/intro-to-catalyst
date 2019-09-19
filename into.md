@@ -288,6 +288,10 @@ Who then clean the validated tx's from their mempool
 
 ---
 
+# Catalyst.Core Framework
+
+---
+
 # Architecture
 
 ```
