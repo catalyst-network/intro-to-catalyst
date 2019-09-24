@@ -14,7 +14,7 @@ style: |
   #     background: none;
   # }
 
-header: '**_Virtual Meet-up #1 - Developer introduction_**'
+# header: '**_Virtual Meet-up #1 - Developer introduction_**'
 # footer: '![image](https://example.com/image.jpg)'
 ---
 
@@ -30,12 +30,6 @@ Developer Introduction
 
 # What is the
 # <!--fit-->Catalyst Network?
-
----
-
-# <!--fit--> #NotHotDog
-
-![bg right 50%](./images/not-hot-dog.jpeg "NOT HOT DOG!!!")
 
 ---
 
@@ -113,10 +107,6 @@ Developer Introduction
 # Broadcast to network
 
 ![bg right 90%](./images/gossip.png)
-
----
-
-# Nothing too strange yet
 
 ---
 
@@ -264,27 +254,9 @@ Who then clean the validated tx's from their mempool
 
 ---
 
-# #NotBlockchain
+# Consensus Cycle
 
-![bg right 90%](./images/blockchain.png)
-
----
-
-# #DeltaChain
-
-![bg right 90%](./images/not-blockchain.png)
-
----
-
-![bg 40%](./images/lolz.jpeg)
-
----
-
-# Consensus Research
-
-# <!--fit--> https://catalystnet.org/consensus-research-paper.pdf
-
-![bg right 100%](./images/1cycle.png)
+![bg 100%](./images/1cycle.png)
 
 ---
 
@@ -534,8 +506,6 @@ https://catalystnet.org/eap
 
 # Thanks
 
-[twitter.com/catalystNetOrg](https://twitter.com/catalystNetOrg)
-[github.com/catalyst-network](https://github.com/catalyst-network)
-[twitter.com/@nshcore](https://twitter.com/nshcore)
+[twitter.com/nshcore](https://twitter.com/nshcore)
 [github.com/nshcore](https://github.com/nshcore)
 ---
