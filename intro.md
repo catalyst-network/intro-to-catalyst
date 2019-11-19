@@ -35,7 +35,7 @@ Developer Introduction
 
 # Catalyst Network 
 
-* Probabalistic BFT Consensus
+* Probabilistic BFT Consensus
 * Distributed FileSystem (DFS)
 * Distributed Compute System (DCS)
 * Distributed DNS
@@ -45,11 +45,11 @@ Developer Introduction
 ---
 
 # What is 
-# <!--fit-->Probablistic BFT Consensus
+# <!--fit-->Probabilistic BFT Consensus
 
 ---
 
-# <!---fit--->A collabarative process in which nodes collectively vote on global state transitions
+# <!---fit--->A collaborative process in which nodes collectively vote on global state transitions
 
 ---
 # Create Transaction
@@ -132,13 +132,13 @@ Developer Introduction
 2. Reservist Node
     - Awaiting for admission to the validation pool
 3. Worker Node
-    - A node that is admited to the validation pool
+    - A node that is admitted to the validation pool
 4. Producer Node
-    - A subset of worker nodes who can contirbute to production of ledger state updates
+    - A subset of worker nodes who can contribute to production of ledger state updates
 
 ---
 
-# Producer Selection 
+# Producer Selection
 
 dfsHash(Δc-1) XOR PeerID
 
@@ -250,7 +250,7 @@ When producers have voted and come to consensus on the most correct state update
 }
 ```
 
-Who then clean the validated tx's from their mempool
+Who then clean the validated transactions from their mempool
 
 ---
 
@@ -299,23 +299,23 @@ Who then clean the validated tx's from their mempool
 
 # Catalyst.Protocol
 
-* Abstract Protocol Schema Deffinitions.
-* Protobuffs Serialisation Format.
+* Abstract Protocol Schema Definitions.
+* Protobuffs Serialization Format.
 * Language Interoperability.
 
 ---
 
 # Protocol-sdk-*
 
-* Concrete standardised types across languages
-* Auto generated from protobuffs deffinitions
+* Concrete standardized types across languages
+* Auto generated from protobuffs definitions
 * Building blocks for low level functionality
 
 ---
 
 # Catalyst.Core.Lib
 
-Core librarys and helpers for IO, networking and configuration. Low level functionality for nodes and modules
+Core libraries and helpers for IO, networking and configuration. Low level functionality for nodes and modules
 
 * IO
 * P2P
@@ -325,13 +325,13 @@ Core librarys and helpers for IO, networking and configuration. Low level functi
 
 # Catalyst.Core.Modules.*
 
-* Core modules provide spoecific functionality for Catalyst.Node
+* Core modules provide specific functionality for Catalyst.Node
 
 ---
 
 # Catalyst.Modules.*
 
-* Modules provide 'flavour' functionality for nodes
+* Modules provide 'flavor' functionality for nodes
 * Use familiar technology
 * Extend core functionality
 
@@ -486,7 +486,7 @@ Catalyst users will have a unique ability to build KVM contracts that will have 
 
 # KVM with Catalyst cryptography
 
-KVM will extend EVM allowing Catalyst users to create and verify Catalyst cryptographical artifacts.Catalyst signatures and multihashes will be available for KVM smart contract developers.
+KVM will extend EVM allowing Catalyst users to create and verify Catalyst cryptographic artifacts.Catalyst signatures and multihashes will be available for KVM smart contract developers.
 
 ---
 
